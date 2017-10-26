@@ -1,0 +1,29 @@
+<!--加载页头-->
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li><a href="#/cStart">首页</a></li>
+        <li class="active">详情</li>
+    </ul>
+    <div class="panel panel-default" ng-repeat="dd in dish">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{dd.name}}</h3>
+        </div>
+        <div class="panel-body">
+            <img class="img-responsive" ng-src="img/{{dd.img_lg}}" alt=""/>
+            <br/>
+            <p>上牌时间：{{dd.car_license}}</p>
+            <p>表显里程：{{dd.mileage}}</p>
+            <p>车主报价：<span class="price">{{dd.price | currency:'¥'}}</span></p>
+            <p>{{dd.detail}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="navbar-right">
+            <button class="btn btn-success" ng-click="jump('/cOrder/'+did)">就要这辆</button>
+            <button class="btn btn-warning" ng-click="jump('/cMain')">我再看看</button>
+        </div>
+    </div>
+</div>
+<!--页尾-->
+<div ng-include="'tpl/include/footer.html'"></div>

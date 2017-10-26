@@ -1,0 +1,29 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="container-fluid" >
+    <div class="form-group has-feedback search">
+        <input ng-model="myKw"
+                type="search" class="form-control" placeholder="搜索您喜欢的车型...">
+        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+    </div>
+</div>
+<!--菜品列表-->
+<div class="container-fluid">
+    <div class="list-group" >
+        <a href="#/cDetail/{{car.did}}" class="list-group-item"
+                ng-repeat="car in dList">
+                <div class="media">
+                    <div class="media-left">
+                            <img class="media-object" ng-src="img/{{car.img_sm}}" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{car.name}}</h3>
+                        <p>{{car.car_license}}&nbsp;/&nbsp;{{car.mileage}}万公里</p>
+                        <p class="price">{{car.price |currency:'￥'}}万</p>
+                    </div>
+                </div>
+        </a>
+    </div>
+    <button class="btn btn-success btn-block" ng-click="loadMore()" ng-show="hasMore">加载更多</button>
+    <p ng-hide="hasMore">没有更多数据可以加载了...</p>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>
