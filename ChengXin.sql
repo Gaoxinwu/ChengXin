@@ -76,6 +76,24 @@ INSERT INTO carList(did,img_sm,img_lg,name,car_license,mileage,price,detail) VAL
        33.30,
        '该车骨架完好，排除事故车，发动机机爪螺丝有拆卸痕迹，发动机变速箱工作正常，内饰干净整洁正常磨损，车身局部钣金喷漆，一直按时定期保养，整体车况不错。'
 ),
+(  null,
+       'p01.jpg',
+       'p01-l.jpg',
+       '路虎揽胜极光 2014款 2.0T 5门耀动版(进口)',
+       '2014-11',
+       6.4,
+       33.30,
+       '该车骨架完好，排除事故车，发动机机爪螺丝有拆卸痕迹，发动机变速箱工作正常，内饰干净整洁正常磨损，车身局部钣金喷漆，一直按时定期保养，整体车况不错。'
+),
+(  null,
+       'p01.jpg',
+       'p01-l.jpg',
+       '路虎揽胜极光 2014款 2.0T 5门耀动版(进口)',
+       '2014-11',
+       6.4,
+       33.30,
+       '该车骨架完好，排除事故车，发动机机爪螺丝有拆卸痕迹，发动机变速箱工作正常，内饰干净整洁正常磨损，车身局部钣金喷漆，一直按时定期保养，整体车况不错。'
+),
 (   null,
         'p01.jpg',
         'p01-l.jpg',
@@ -85,8 +103,6 @@ INSERT INTO carList(did,img_sm,img_lg,name,car_license,mileage,price,detail) VAL
         33.30,
         '该车骨架完好，排除事故车，发动机机爪螺丝有拆卸痕迹，发动机变速箱工作正常，内饰干净整洁正常磨损，车身局部钣金喷漆，一直按时定期保养，整体车况不错。'
 );
-
-##SELECT * FROM kf_dish;
 
 CREATE TABLE car_order(
     oid INT PRIMARY KEY AUTO_INCREMENT,
